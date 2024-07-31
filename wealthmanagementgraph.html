@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="glow">Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .reviews {
+            width: 300px;
+            height:605px;
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 120px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="E-Wave.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="wealthmanagementhome.html"><img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX5559065.jpg"
+                     alt="HomePage"></a></li>
+                <li><a href="wealthmanagementgraph.html"><img src="https://png.pngtree.com/png-vector/20190801/ourlarge/pngtree-vector-graph-icon-png-image_1638753.jpg" 
+                    alt="Graph"></a></li>
+                <li><a href="wealthmanagementnotif.html"><img src="https://png.pngtree.com/png-vector/20190321/ourmid/pngtree-vector-notification-icon-png-image_855007.jpg" 
+                    alt="Notification"></a></li>
+                <li><a href="wealthmanagementwallet.html"><img src="https://static.vecteezy.com/system/resources/previews/000/575/709/non_2x/credit-card-icon-vector.jpg" 
+                    alt="Wallet"></a></li>
+                <li><a href="wealthmanagementsetting.html"><img src="https://i.pinimg.com/736x/73/f9/c2/73f9c2b31c29ec635c35a4b6915aefc3.jpg" 
+                    alt="Settings"></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div class="header-title">
+                <h1>Dashboard</h1>
+            </div>
+        </header>
+            <div class="overview">
+                
+                <h2>Analysis:</h2>
+                <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                <script type="text/javascript">
+                    /* Initializing the TradingView widget */
+                    new TradingView.widget(
+                        {
+                            "width": "100%",
+                            "height": 350,
+                            "symbol": "BITSTAMP:BTCUSD",
+                            "interval": "D",
+                            "timezone": "Etc/UTC",
+                            "theme": "dark",
+                            "style": "1",
+                            "locale": "en",
+                            "toolbar_bg": "#f1f3f6",
+                            "enable_publishing": false,
+                            "withdateranges": true,
+                            "hide_side_toolbar": false,
+                            "allow_symbol_change": true,
+                            "details": true,
+                            "hotlist": true,
+                            "calendar": true,
+                            "news": [
+                                "headlines"
+                            ],
+                            "container_id": "tradingview_chart"
+                        }
+                    );
+                </script>            
+            </div>
+            <br>
+            <section class="products">
+                <h2>Advisors:</h2>
+                <div class="product-list">
+                    <div class="product">
+                        <img src="product.jpg" alt="Product A">
+                        <p>Advisor #A</p>
+                    </div>
+                    <div class="product">
+                        <img src="product.jpg" alt="Product B">
+                        <p>Advisor #B</p>
+                    </div>
+                    <div class="product">
+                        <img src="product.jpg" alt="Product C">
+                        <p>Advisor #C</p>
+                    </div>
+                    <div class="product">
+                        <img src="product.jpg" alt="Product D">
+                        <p>Advisor #D</p>
+                    </div>
+                    <div class="product">
+                        <img src="product.jpg" alt="Product E">
+                        <p>Advisor #E</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+            <div class="reviews">
+                <h2>Reviews:</h2>
+                <div class="review-list">
+                    <div class="review">
+                        <img src="user.jpg" alt="User 5">
+                        <div class="review-details">
+                            <h3>Emma Watson</h3>
+                            <p>Product #A</p>
+                            <p>“Profits only!”</p>
+                            <span>30 seconds ago</span>
+                        </div>
+                        <div class="review-rating">
+                            <img src="stars.png" alt="5 stars">
+                        </div>
+                    </div>
+                    <div class="review">
+                        <img src="user.jpg" alt="User 1">
+                        <div class="review-details">
+                            <h3>Claudia Alves</h3>
+                            <p>Product #A</p>
+                            <p>“Thanks to the Robo-Advisor”</p>
+                            <span>2 min ago</span>
+                        </div>
+                        <div class="review-rating">
+                            <img src="stars.png" alt="5 stars">
+                        </div>
+                    </div>
+                    <div class="review">
+                        <img src="user.jpg" alt="User 2">
+                        <div class="review-details">
+                            <h3>Cahaya Dewi</h3>
+                            <p>Product #B</p>
+                            <p>“KUDOS MR ROBO”</p>
+                            <span>5 min ago</span>
+                        </div>
+                        <div class="review-rating">
+                            <img src="stars.png" alt="5 stars">
+                        </div>
+                    </div>
+                    <div class="review">
+                        <img src="user.jpg" alt="User 3">
+                        <div class="review-details">
+                            <h3>Olivia Wilson</h3>
+                            <p>Product #C</p>
+                            <p>“THANKS AI!”</p>
+                            <span>7 min ago</span>
+                        </div>
+                        <div class="review-rating">
+                            <img src="stars.png" alt="5 stars">
+                        </div>
+                    </div>
+                    <div class="review">
+                        <img src="user.jpg" alt="User 4">
+                        <div class="review-details">
+                            <h3>Yael Amari</h3>
+                            <p>Product #D</p>
+                            <p>“AI is the Future!”</p>
+                            <span>9 min ago</span>
+                        </div>
+                        <div class="review-rating">
+                            <img src="stars.png" alt="5 stars">
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+    const ctx = document.getElementById('overviewChart').getContext('2d');
+    const overviewChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['Week #1', 'Week #2', 'Week #3', 'Week #4'],
+            datasets: [
+                {
+                    label: 'This Month',
+                    data: [10, 20, 30, 40],
+                    borderColor: 'rgba(99, 102, 241, 1)',
+                    borderWidth: 2
+                },
+                {
+                    label: 'Last Month',
+                    data: [20, 10, 40, 30],
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 2
+                },
+                {
+                    label: '2 Months Ago',
+                    data: [30, 40, 20, 10],
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 2
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+    </script>
+    </div>
+</body>
+</html>

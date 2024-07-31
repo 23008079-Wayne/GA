@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wealth Management Notifications</title>
+    
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .sidebar {
+            width: 100px;
+            height: 100vh;
+            background-color:black;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 20px 0; /* Adjusted to center-align icons */
+            box-sizing: border-box;
+        }
+        .sidebar .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .sidebar img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+        .sidebar nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        .sidebar nav ul li {
+            margin-bottom: 20px;
+        }
+        .sidebar nav ul li a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .sidebar nav ul li img {
+            width: 40px; /* Adjusted icon size */
+            height: 40px; /* Adjusted icon size */
+        }
+        .container {
+            margin-left: 120px; /* Adjusted to account for sidebar width */
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            margin-bottom: 10px;
+            color: #4CAF50;
+        }
+        .notification {
+            background-color: #333;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .notification p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="logo">
+            <img src="E-Wave.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="wealthmanagementhome.html"><img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX5559065.jpg" alt="HomePage"></a></li>
+                <li><a href="wealthmanagementgraph.html"><img src="https://png.pngtree.com/png-vector/20190801/ourlarge/pngtree-vector-graph-icon-png-image_1638753.jpg" alt="Graph"></a></li>
+                <li><a href="wealthmanagementnotif.html"><img src="https://png.pngtree.com/png-vector/20190321/ourmid/pngtree-vector-notification-icon-png-image_855007.jpg" alt="Notification"></a></li>
+                <li><a href="wealthmanagementwallet.html"><img src="https://static.vecteezy.com/system/resources/previews/000/575/709/non_2x/credit-card-icon-vector.jpg" alt="Wallet"></a></li>
+                <li><a href="wealthmanagementsetting.html"><img src="https://i.pinimg.com/736x/73/f9/c2/73f9c2b31c29ec635c35a4b6915aefc3.jpg" alt="Settings"></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <h1>Notifications</h1>
+        
+        <div class="section">
+            <h2>Recent Notifications</h2>
+            <div class="notification">
+                <p>30 more minutes til market closes for the day</p>
+                <p><small>10 minutes ago</small></p>
+            </div>
+            <div class="notification">
+                <p>Stock B is dropping index! </p>
+                <p><small>20 minutes ago</small></p>
+            </div>
+            <div class="notification">
+                <p>Stock D is Rising</p>
+                <p><small>25 minutes ago</small></p>
+            </div>
+            <div class="notification">
+                <p>Your portfolio has been updated with the latest market changes.</p>
+                <p><small>30 minutes ago</small></p>
+            </div>
+            <div class="notification">
+                <p>Stock C is Rising</p>
+                <p><small>50 minutes ago</small></p>
+            </div>
+            <div class="notification">
+                <p>Your dividends have been paid please check (StockA -> +500 USD).</p>
+                <p><small>1 hour ago</small></p>
+            </div>
+            <div class="notification">
+                <p>Security alert: New login from an unrecognized device.
+                    <br>
+                    <a href="wealthmanagementsetting.html" style="color:aqua;"> click here to change your password now!</a>
+                </p>
+                <p><small>2 hours ago</small></p>
+            </div>
+            <div class="notification">
+                <p>Stock A is Rising!</p>
+                <p><small>5 hours ago</small></p>
+            </div>
+            <div class="notification">
+                <p>Market Have Open For The Day.
+                </p>
+                <p><small>10 hours ago</small></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
