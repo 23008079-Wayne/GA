@@ -22,6 +22,10 @@ body {
 .sidebar .logo img {
     width: 100px;
 }
+.sidebar .logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
 .sidebar nav ul {
     list-style: none;
@@ -36,7 +40,10 @@ body {
 }
 
 .sidebar nav ul li a img {
-    width: 40px;
+    
+    width: 40px; /* Adjusted icon size */
+    height: 40px; /* Adjusted icon size */
+    
 }
 
 
