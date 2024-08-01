@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wealth Management Notifications</title>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .sidebar {
+            width: 100px;
+            height: 100vh;
+            background-color: #000;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 20px 0;
+            box-sizing: border-box;
+        }
+        .sidebar .logo {
+            text-align: center;
+            margin-bottom: 20px;
+
+        }
+        .sidebar .logo img {
+            width: 80px;
+        }
+
+        .sidebar img {
+            width: 80px;
+            margin-bottom: 20px;
+        }
+        .sidebar nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        .sidebar nav ul li {
+            margin-bottom: 20px;
+        }
+        .sidebar nav ul li a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .sidebar nav ul li img {
+            width: 40px;
+            height: 40px;
+        }
+        .container {
+            margin-left: 100px;
+            padding: 20px;
+        }
+        .header {
+            margin-bottom: 20px;
+        }
+        .info-content {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .advisor-info {
+            display: flex;
+            width: 100%;
+            padding: 20px;
+            background-color: #444;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .advisor-photo img {
+            border-radius: 5px;
+            max-width: 100px;
+            margin-right: 20px;
+        }
+        .advisor-details {
+            flex-grow: 1;
+        }
+        .advisor-details h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="logo">
+            <img src="E-Wave.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX5559065.jpg" alt="HomePage"></a></li>
+                <li><a href="wealthmanagementgraph.html"><img src="https://png.pngtree.com/png-vector/20190801/ourlarge/pngtree-vector-graph-icon-png-image_1638753.jpg" alt="Graph"></a></li>
+                <li><a href="wealthmanagementnotif.html"><img src="https://png.pngtree.com/png-vector/20190321/ourmid/pngtree-vector-notification-icon-png-image_855007.jpg" alt="Notification"></a></li>
+                <li><a href="wealthmanagementwallet.html"><img src="https://static.vecteezy.com/system/resources/previews/000/575/709/non_2x/credit-card-icon-vector.jpg" alt="Wallet"></a></li>
+                <li><a href="wealthmanagementsetting.html"><img src="https://i.pinimg.com/736x/73/f9/c2/73f9c2b31c29ec635c35a4b6915aefc3.jpg" alt="Settings"></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <h1>Advisor Information</h1>
+        
+        <main class="info">
+            <div class="info-content">
+                <div class="advisor-info">
+                    <div class="advisor-photo">
+                        <img src="advisor-photo.jpg" alt="Advisor Photo">
+                    </div>
+                    <div class="advisor-details">
+                        <h2>Dr. Emily Johnson</h2>
+                        <p>Position: Senior Financial Advisor</p>
+                        <p>Email: emily.johnson@example.com</p>
+                        <p>Phone: (123) 456-7890</p>
+                        <p>Biography: Dr. Emily Johnson has over 15 years of experience in the finance industry. 
+                            She holds a Ph.D. in Finance from Harvard University and is a Certified Financial Planner (CFP). 
+                            Dr. Johnson specializes in personalized financial planning, investment strategies, and wealth management. 
+                            Known for her analytical skills and dedication, she has helped many clients achieve their financial goals. 
+                            In her free time, she enjoys reading, traveling, and promoting financial education in her community.
+                        </p>
+                    </div>
+                </div>
+                <div class="advisor-info">
+                    <div class="advisor-photo">
+                        <img src="advisor-photo.jpg" alt="Advisor Photo">
+                    </div>
+                    <div class="advisor-details">
+                        <h2>Mr. David Smith</h2>
+                        <p>Position: Investment Strategist</p>
+                        <p>Email: david.smith@example.com</p>
+                        <p>Phone: (987) 654-3210</p>
+                        <p>Biography: Mr. David Smith has over 20 years of experience in investment management. 
+                            He holds an MBA in Finance from Stanford University and is a Chartered Financial Analyst (CFA). 
+                            David specializes in market analysis, asset allocation, and risk management. 
+                            Known for his client-focused approach, he helps clients navigate market fluctuations and achieve their financial goals.
+                            In his free time, David enjoys hiking, playing chess, and promoting financial literacy.
+                        </p>
+                    </div>
+                </div>
+                <div class="advisor-info">
+                    <div class="advisor-photo">
+                        <img src="advisor-photo.jpg" alt="Advisor Photo">
+                    </div>
+                    <div class="advisor-details">
+                        <h2>Ms. Laura Johnson</h2>
+                        <p>Position: Senior Portfolio Manager</p>
+                        <p>Email: laura.johnson@example.com</p>
+                        <p>Phone: (789) 123-4560</p>
+                        <p>Biography: Ms. Laura Johnson has 15 years of experience in portfolio management. 
+                            She holds a Master's degree in Economics from Harvard University and is a Certified Financial Planner (CFP). 
+                            Laura specializes in retirement planning and wealth management. 
+                            Outside of work, she enjoys traveling, yoga, and volunteering at local non-profits.
+                        </p>
+                    </div>
+                </div>
+                <div class="advisor-info">
+                    <div class="advisor-photo">
+                        <img src="advisor-photo.jpg" alt="Advisor Photo">
+                    </div>
+                    <div class="advisor-details">
+                        <h2>Mr. John Williams</h2>
+                        <p>Position: Financial Advisor</p>
+                        <p>Email: john.williams@example.com</p>
+                        <p>Phone: (555) 123-4567</p>
+                        <p>Biography: Mr. John Williams has 10 years of experience as a financial advisor. 
+                            He holds a Bachelor's degree in Finance from the University of Chicago and is a Certified Financial Planner (CFP). 
+                            John focuses on investment strategies and retirement planning. 
+                            In his free time, he enjoys golfing, reading, and mentoring young professionals.
+                        </p>
+                    </div>                   
+                </div>
+                <div class="advisor-info">
+                    <div class="advisor-photo">
+                        <img src="advisor-photo.jpg" alt="Advisor Photo">
+                    </div>
+                    <div class="advisor-details">
+                        <h2>Mr. Michael Brown</h2>
+                        <p>Position: Investment Consultant</p>
+                        <p>Email: michael.brown@example.com</p>
+                        <p>Phone: (333) 456-7890</p>
+                        <p>Biography: Mr. Michael Brown has 8 years of experience as an investment consultant. 
+                            He holds a Bachelor's degree in Business Administration from the University of California, Berkeley. 
+                            Michael specializes in stock market analysis and portfolio diversification. 
+                            In his free time, he enjoys cycling, playing guitar, and volunteering at animal shelters.
+                        </p>
+                    </div>                    
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
