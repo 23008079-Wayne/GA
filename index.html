@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title class="glow">HomePage</title>
     <link rel="stylesheet" href="styles.css">
+    <a href="contactus.html" class="contact-us"> Contact US </a>
 </head>
 <body>
     <div class="sidebar">
@@ -33,7 +34,6 @@
                 <h1>HomePage</h1>
             </div>
         </header>
-        
         <section class="p2p-lending">
             <h2>P2P Lending:</h2>
             <div class="lenders">
@@ -49,7 +49,7 @@
                     <img src="dollar.png" alt="Lender C">
                     <p>Education</p>
                 </div>
-                <button id='apply' class="btn">Click Here For P2P Loan/Info</button>
+                <button id='apply' class="btn">P2P Loan/Info</button>
 
                 <script>
                     document.getElementById('apply').addEventListener('click', function() {
@@ -69,24 +69,31 @@
             <div class="product-list">
                 <div class="product">
                     <img src="product.jpg" alt="Product A">
-                    <p>Advisor #A</p>
+                    <p>Advisor 1</p>
                 </div>
                 <div class="product">
                     <img src="product.jpg" alt="Product B">
-                    <p>Advisor #B</p>
+                    <p>Advisor 2</p>
                 </div>
                 <div class="product">
                     <img src="product.jpg" alt="Product C">
-                    <p>Advisor #C</p>
+                    <p>Advisor 3</p>
                 </div>
                 <div class="product">
                     <img src="product.jpg" alt="Product D">
-                    <p>Advisor #D</p>
+                    <p>Advisor 4</p>
                 </div>
                 <div class="product">
                     <img src="product.jpg" alt="Product E">
-                    <p>Advisor #E</p>
+                    <p>Advisor 5</p>
                 </div>
+                <button id='view' class="btn">Advisor Info</button>
+
+                <script>
+                    document.getElementById('view').addEventListener('click', function() {
+                        window.location.href = 'wealthmanagementadvisor.html'; 
+                    });
+                </script>
             </div>
         </section>
     </div>
@@ -97,8 +104,8 @@
                 <img src="user.jpg" alt="User 1">
                 <div class="review-details">
                     <h3>Claudia Alves</h3>
-                    <p>Product #A</p>
-                    <p>“Thanks to the Robo-Advisor”</p>
+                    <p>Advisor 1</p>
+                    <p>“Thanks to Emily, Rasing my profits, This advisor is really professional ”</p>
                     <span>2 min ago</span>
                 </div>
                 <div class="review-rating">
@@ -109,8 +116,8 @@
                 <img src="user.jpg" alt="User 2">
                 <div class="review-details">
                     <h3>Cahaya Dewi</h3>
-                    <p>Product #B</p>
-                    <p>“KUDOS MR ROBO”</p>
+                    <p>Advisor 2</p>
+                    <p>“KUDOS to David whereby he does whats actually good for me, never doubting him again”</p>
                     <span>5 min ago</span>
                 </div>
                 <div class="review-rating">
@@ -121,8 +128,8 @@
                 <img src="user.jpg" alt="User 3">
                 <div class="review-details">
                     <h3>Olivia Wilson</h3>
-                    <p>Product #C</p>
-                    <p>“THANKS AI!”</p>
+                    <p>Advisor 3</p>
+                    <p>“Thanks Laura for the impeccable Foresight!”</p>
                     <span>7 min ago</span>
                 </div>
                 <div class="review-rating">
@@ -133,8 +140,8 @@
                 <img src="user.jpg" alt="User 4">
                 <div class="review-details">
                     <h3>Yael Amari</h3>
-                    <p>Product #D</p>
-                    <p>“AI is the Future!”</p>
+                    <p>Advisor 4</p>
+                    <p>“Road to diversifying my portfolio”</p>
                     <span>9 min ago</span>
                 </div>
                 <div class="review-rating">
