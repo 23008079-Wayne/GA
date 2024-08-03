@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Financial Advisor</title>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 100%;
+        }
+        h1 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #555;
+            color: #fff;
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            .form-group input,
+            .form-group textarea,
+            .form-group select {
+                padding: 8px;
+            }
+            .btn {
+                padding: 12px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Applying for Financial Advisor</h1>
+        <form action="submit_application.html" method="post">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="position">Advisor You're Applying For</label>
+                <select id="position" name="position" required>
+                    <option value="Senior Financial Advisor">Advisor #1 </option>
+                    <option value="Investment Strategist">Advisor #2</option>
+                    <option value="Senior Portfolio Manager">Advisor #3</option>
+                    <option value="Financial Advisor">Advisor #4</option>
+                    <option value="Investment Consultant">Advisor #5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="resume">Upload Your Personal Particulars(IC/Passport) </label>
+                <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
+            </div>
+            <button id="application" type="submit" class="btn">Submit Application</button>
+            <script>
+                document.getElementById('application').addEventListener('click', function() {
+                    alert('Application submitted your selected advisor will be contacting you in a few days')
+                    window.location.href = 'index.html'; 
+                });
+            </script>
+        </form>
+    </div>
+</body>
+</html>
