@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake SingPass QR Code Scanner</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .scanner-container {
+            text-align: center;
+            background-color: #1f1f1f;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        
+        .scanner-container h2 {
+            margin-bottom: 20px;
+        }
+        
+        .scanner-container img {
+            margin-bottom: 20px;
+        }
+        
+        .scanner-container button {
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="scanner-container">
+        <h2>Fake SingPass QR Code Scanner</h2>
+        <img id="qrCode" src="" alt="QR Code">
+        <br>
+        <button onclick="redirectToHompage()">Scan QR Code</button>
+    </div>
+    <script>
+        function generateQRCode(url) {
+            const qrCode = document.getElementById("qrCode");
+            const encodedUrl = encodeURIComponent(url);
+            qrCode.src = `https://chart.googleapis.com/chart?cht=qr&chs=300x300&chl=${encodedUrl}`;
+        }
+
+        function redirectToHompage() {
+            window.location.href = "homepage.html";
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            generateQRCode(window.location.origin + "/homepage.html");
+        });
+    </script>
+</body>
+</html>
