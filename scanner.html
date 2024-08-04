@@ -47,12 +47,14 @@
 <body>
     <div class="scanner-container">
         <h2>Fake SingPass QR Code Scanner</h2>
-        <img id="qrCode" src="" alt="QR Code">
+        <img src="frame.png" alt="QR Code">
+        
         <br>
         <button onclick="redirectToHompage()">Scan QR Code</button>
     </div>
     <script>
         function generateQRCode(url) {
+            
             const qrCode = document.getElementById("qrCode");
             const encodedUrl = encodeURIComponent(url);
             qrCode.src = `https://chart.googleapis.com/chart?cht=qr&chs=300x300&chl=${encodedUrl}`;
