@@ -42,6 +42,10 @@
             font-size: 16px;
             cursor: pointer;
         }
+
+        .scanner-container .back-button {
+            background-color: #cc0000;
+        }
     </style>
 </head>
 <body>
@@ -51,6 +55,7 @@
         
         <br>
         <button onclick="redirectToHompage()">Scan QR Code</button>
+        <button class="back-button" onclick="goBack()">Go Back</button>
     </div>
     <script>
         function generateQRCode(url) {
@@ -62,6 +67,10 @@
 
         function redirectToHompage() {
             window.location.href = "homepage.html";
+        }
+        
+        function goBack() {
+            window.location.href = "index.html";
         }
 
         document.addEventListener("DOMContentLoaded", function() {
